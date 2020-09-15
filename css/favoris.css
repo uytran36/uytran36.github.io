@@ -1,0 +1,224 @@
+#favoris {
+    background-color: #c4c4c4;
+}
+
+.wrap-content {
+    padding: 20px 40px;
+}
+
+/* favoris */
+.wrapFavoris label {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+}
+
+.cardSong {
+    background-color: #f7f7f7;
+    width: 800px;
+    margin: 0px;
+    border-top: 1px solid #c5c5c5;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 300px 300px 100px
+}
+
+.toolBox ul li {
+    list-style-type: none;
+    float: left;
+    cursor: pointer;
+}
+
+.cardSong a:hover {
+    text-decoration: none;
+    color: #FF2D55;
+}
+
+.toolBox ul li:hover {
+    color: #FF2D55;
+}
+
+#dTable {
+    overflow-y: scroll;
+    height: 200px;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+/* end of favoris */
+
+/* artist*/
+
+.wrap-artist {
+    height: 300px;
+}
+.wrap-recommandations {
+    height: 500px;
+}
+
+.wrap-list-artist label {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+.wrap-artist img {
+    border-radius: 100px;
+}
+
+.wrap-artist .chanteur {
+    font-size: 15px;
+}
+/* recommandations  */
+.wrap-list-recommandations label {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 10%;
+    padding-bottom: 100px;
+}
+
+.wrap-recommandations .carousel-inner, .wrap-artist .carousel-inner {
+    width: 800px;
+    margin-left: 63px;
+}
+
+.wrap-artist .carousel-control-next, .wrap-artist .carousel-control-prev {
+    background-color: #666666;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.wrap-recommandations .carousel-control-next, .wrap-recommandations .carousel-control-prev {
+    background-color: #666666;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#carouselExampleControls3 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.album {
+    padding: 0;
+    text-align: center;
+}
+
+.chanteur {
+    font-size: 13px;
+    color: #ff577F;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.nomDeAlbum {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.album a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popup {
+    position: absolute;
+    margin-left: 20%;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup .popuptext{
+    visibility: hidden;
+    width: 700px;
+    height: 500px;
+    background-color: #E5E5E5;
+    color: black;
+    text-align: left;
+    padding: 100px 0;
+    padding-left: 50px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.popup .show {
+    visibility: visible;
+}
+.speech{
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid red;
+    background-color: red;
+    height: 100px;
+    border-radius: 50%;
+    animation: corner 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    width: 100px;
+    margin: 0 260px;
+    margin-top: 30px;
+}
+
+#temp{
+    visibility: hidden;
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@keyframes corner {
+    0% {
+        border-top-left-radius: 1% 50%;
+   }
+    12.5% {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+   }
+    25% {
+        border-top-right-radius: 1% 50%;
+   }
+    25.001% {
+        border-top-right-radius: 50% 1%;
+   }
+    37.5% {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+   }
+    50% {
+        border-bottom-right-radius: 50% 1%;
+   }
+    50.001% {
+        border-bottom-right-radius: 1% 50%;
+   }
+    62.5% {
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+   }
+    75% {
+        border-bottom-left-radius: 1% 50%;
+   }
+    75.001% {
+        border-bottom-left-radius: 50% 1%;
+   }
+    87.5% {
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+   }
+    100% {
+        border-top-left-radius: 50% 1%;
+   }
+}
+/* end of recommandations */

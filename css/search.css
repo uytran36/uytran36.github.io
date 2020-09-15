@@ -1,0 +1,212 @@
+/* START HEADER AND FOOTER*/
+#header{
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0.5%;
+}
+#navbar{
+    width: 53%;
+    margin: 0 auto 0 auto;
+}
+#searchhd{
+   width: 60%;
+}
+.seformhd{
+    color: white;
+    margin-left: 3%;
+}
+.seconnecterhd:hover{
+    color: coral;
+}
+.s_incrirhd:hover{
+    color: coral;
+}
+.daunganhd{
+    color: #FFf;
+}
+/*FOOTER*/
+#footer{
+    background-color: black;
+    margin-top: 0.5%;
+}
+#contentft{
+    padding: 1%;
+    margin: 0 auto;
+    width: 60%;
+}
+.logofooter{
+    width: 50px; 
+    height: 50px;
+}
+.smaltextulft{
+    color: #FFF;
+    
+}
+.smaltextft{
+    font-size: small;
+    color: #FFF;
+}
+.litextft:hover{
+    color: coral;
+}
+/*END HEADER AND FOOTER*/
+/*BODY*/
+#body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E5E5;
+    height: 2000px;
+    width: 60%;
+    position: relative;
+}
+.row .col{
+    width: 140px;
+    text-align: center;
+}
+.album img{
+    margin-top: 30px;
+    width: 152px;
+    height: 180px;
+}
+.nomDeAlbum{
+    text-align: center;
+    color: black;
+}
+.chanteur{
+    text-align: center;
+    color: #ff577F;
+}
+#VNMusique{
+    margin-top: 1%;
+}
+#row1 {
+    padding-top: 1%;
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#row1 ul li{
+    font-weight: bold;
+    font-size: 26px;
+    list-style: none;
+    float: left;
+    margin: 0 2em;
+    padding-left: 8px;
+}
+#main{
+    color: #ff577F;
+}
+.album a{
+    text-decoration: none;
+    color: #ff577F;
+}
+.row{
+    margin-top: 1%;
+}
+.album a:hover{
+    text-decoration: none;
+}
+.album a:hover .nomDeAlbum{
+    font-weight: bold;
+}
+.album a:hover .chanteur{
+    font-weight: bold;
+}
+.row .col ul li a:hover{
+    text-decoration: none;
+    color: #ff577F;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup .popuptext{
+    visibility: hidden;
+    width: 700px;
+    height: 500px;
+    background-color: #E5E5E5;
+    color: black;
+    text-align: left;
+    padding: 100px 0;
+    padding-left: 50px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.popup .show {
+    visibility: visible;
+}
+.speech{
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid red;
+    background-color: red;
+    height: 100px;
+    border-radius: 50%;
+    animation: corner 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    width: 100px;
+    margin: 0 260px;
+    margin-top: 30px;
+}
+
+#temp{
+    visibility: hidden;
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@keyframes corner {
+    0% {
+        border-top-left-radius: 1% 50%;
+   }
+    12.5% {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+   }
+    25% {
+        border-top-right-radius: 1% 50%;
+   }
+    25.001% {
+        border-top-right-radius: 50% 1%;
+   }
+    37.5% {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+   }
+    50% {
+        border-bottom-right-radius: 50% 1%;
+   }
+    50.001% {
+        border-bottom-right-radius: 1% 50%;
+   }
+    62.5% {
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+   }
+    75% {
+        border-bottom-left-radius: 1% 50%;
+   }
+    75.001% {
+        border-bottom-left-radius: 50% 1%;
+   }
+    87.5% {
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+   }
+    100% {
+        border-top-left-radius: 50% 1%;
+   }
+}
+  

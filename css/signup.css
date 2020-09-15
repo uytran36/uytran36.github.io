@@ -1,0 +1,158 @@
+/* START HEADER AND FOOTER*/
+#header{
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0.5%;
+}
+#navbar{
+    width: 53%;
+    margin: 0 auto 0 auto;
+}
+#searchhd{
+   width: 53%;
+}
+.seformhd{
+    color: white;
+    margin-left: 3%;
+}
+.seconnecterhd:hover{
+    color: coral;
+}
+.s_incrirhd:hover{
+    color: coral;
+}
+.daunganhd{
+    color: #FFf;
+}
+/*FOOTER*/
+#footer{
+    background-color: black;
+    margin-top: 0.5%;
+}
+#contentft{
+    padding: 1%;
+    margin: 0 auto;
+    width: 60%;
+}
+.logofooter{
+    width: 50px; 
+    height: 50px;
+}
+.smaltextulft{
+    color: #FFF;
+    
+}
+.smaltextft{
+    font-size: small;
+    color: #FFF;
+}
+.litextft:hover{
+    color: coral;
+}
+/*END HEADER AND FOOTER*/
+
+/* BODY */
+#signup {
+    border-color: black;
+    width: 500px;
+    margin: 0 auto;
+    border: 0;
+    margin-top: 50px;
+
+}
+#signup > legend {
+    padding: 0;
+    margin: 0 auto;
+    font-weight: bold;
+    width: fit-content;
+    text-align: center;
+    width: 400px;
+}
+
+#info {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: fit-content;
+    border: 0;
+}
+
+#frmUsername, #frmPassword, #frmConfirmEmail, #frmEmail, #birth {
+    color: #b3abab;
+    padding: 6px 12px;
+    width: 400px;
+    height: 35px;
+    border: 1px solid #b3abab;
+    margin: 0 auto;
+    font-size: 12px;
+    outline-style: none;
+}
+#frmPassword, #frmConfirmEmail, #frmEmail, #birth, #frmSex {
+    margin-bottom: 20px;
+}
+
+#frmPassword:focus, #frmConfirmEmail:focus, #frmEmail:focus, #birth:focus, #frmUsername:focus {
+    border-color: black;
+}
+.question, .gender {
+    font-size: 12px;
+}
+.question {
+    font-weight: bold;
+}
+small {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.gender {
+    margin-right: 40px;
+}
+
+#line {
+    background-color: #b3abab;
+    height: 1px;
+}
+#politics {
+    padding-bottom: 100px;
+    float: left;
+    margin-right: 10px;
+}
+#politicsInfo {
+    width: 400px;
+    font-size: 12px;
+}
+
+.rules {
+    text-align: center;
+    font-size: 11px;
+}
+
+#btnSignup {
+    float: right;
+    width: 400px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #ff577f;
+    opacity: 0.6;
+    transition: 0.4s;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    outline-style: none;
+}
+#btnSignup:hover {
+    background-color: #f58ba4;
+    opacity: 1;
+}
+#alrAccount {
+    text-align: center;
+}
+.Login {
+    color: #ff577f;
+    text-decoration: underline;
+}
+
+.Login:hover {
+    color: #f58ba4;
+}

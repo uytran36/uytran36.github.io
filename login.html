@@ -6,7 +6,7 @@
     <title>Se Connecter</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/login.css">
-
+    <link rel="stylesheet" href="css/test.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,6 +19,13 @@
     
     <!--CONTENT-->
     <div id="content" class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+                <p>Khoa Do Musque</p>
+            </a>
+            <hr class="line" style="width: 400px; margin: 0 auto;">
+        </div>
         
         <fieldset id="Login">
             <legend>Login</legend>
@@ -28,7 +35,7 @@
                 <input type="checkbox" id="rememberPwd">
                 <label for="rememberPwd" id="checkPwd">Se souvenir de moi</label>
                 <input type="submit" value="SE CONNECTER" id="btnLogin"><br>
-                <div id="forgotPwd"><a href="#">Mot de passe oublié ?</a></div><hr id="line">
+                <div id="forgotPwd"><a href="#">Mot de passe oublié ?</a></div><hr class="line">
                 <div id="noAccount">
                     <h4 id="questionAcc">Vous n'avez pas de compte ?</h4>
                     <a href="signup.html"><input type="submit" id="btnSignup" value="Je n'ai pas KD Musique"></a>

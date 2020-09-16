@@ -52,6 +52,27 @@
 /*END HEADER AND FOOTER*/
 
 /* BODY */
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: black;
+   
+}
+
 #signup {
     border-color: black;
     width: 500px;
@@ -78,7 +99,7 @@
 }
 
 #frmUsername, #frmPassword, #frmConfirmEmail, #frmEmail, #birth {
-    color: #b3abab;
+    color: #000000;
     padding: 6px 12px;
     width: 400px;
     height: 35px;
@@ -109,7 +130,7 @@ small {
     margin-right: 40px;
 }
 
-#line {
+.line {
     background-color: #b3abab;
     height: 1px;
 }

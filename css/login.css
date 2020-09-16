@@ -1,57 +1,24 @@
-/* START HEADER AND FOOTER*/
-#header{
-    background-color: black;
-    text-align: center;
-    margin-bottom: 0.5%;
-}
-#navbar{
-    width: 53%;
-    margin: 0 auto 0 auto;
-}
-#searchhd{
-   width: 60%;
-}
-.seformhd{
-    color: white;
-    margin-left: 3%;
-}
-.seconnecterhd:hover{
-    color: coral;
-}
-.s_incrirhd:hover{
-    color: coral;
-}
-.daunganhd{
-    color: #FFf;
-}
-/*FOOTER*/
-#footer{
-    background-color: black;
-    margin-top: 0.5%;
-}
-#contentft{
-    padding: 1%;
-    margin: 0 auto;
-    width: 60%;
-}
-.logofooter{
-    width: 50px; 
-    height: 50px;
-}
-.smaltextulft{
-    color: #FFF;
-    
-}
-.smaltextft{
-    font-size: small;
-    color: #FFF;
-}
-.litextft:hover{
-    color: coral;
-}
-/*END HEADER AND FOOTER*/
-
 /* BODY */
+.logo img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: black;
+   
+}
+
 #Login {
     border-color: black;
     width: 1000px;
@@ -170,7 +137,7 @@ span.frmName {
 #forgotPwd > a:hover {
     color: #f58ba4;
 }
-#line {
+.line {
     background-color: #b3abab;
     height: 1px;
 }

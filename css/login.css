@@ -145,3 +145,10 @@ span.frmName {
 #content {
     padding-bottom: 165px;
 }
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+}

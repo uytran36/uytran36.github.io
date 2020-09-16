@@ -31,10 +31,15 @@
             <legend>Login</legend>
             <div id="info">
                 <input type="text" id="frmUsername" placeholder="Email ou nom d'ulitisateur"><br>
+                <span class="error" id="errEmail"></span><br>
+
                 <input type="password" id="frmPassword" placeholder="Mot de passe" ><br>
+                <span class="error" id="errPass"></span><br>
+
                 <input type="checkbox" id="rememberPwd">
                 <label for="rememberPwd" id="checkPwd">Se souvenir de moi</label>
-                <input type="submit" value="SE CONNECTER" id="btnLogin"><br>
+                
+                <input type="submit" value="SE CONNECTER" id="btnLogin" onclick="IsValid()"><br>
                 <div id="forgotPwd"><a href="#">Mot de passe oublié ?</a></div><hr class="line">
                 <div id="noAccount">
                     <h4 id="questionAcc">Vous n'avez pas de compte ?</h4>

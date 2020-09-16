@@ -109,7 +109,7 @@
     outline-style: none;
 }
 #frmPassword, #frmConfirmEmail, #frmEmail, #birth, #frmSex {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 #frmPassword:focus, #frmConfirmEmail:focus, #frmEmail:focus, #birth:focus, #frmUsername:focus {
@@ -176,4 +176,11 @@ small {
 
 .Login:hover {
     color: #f58ba4;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
 }

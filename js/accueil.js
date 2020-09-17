@@ -121,3 +121,21 @@ function IsValid() {
 
   return flag;
 }
+
+
+// POPUP LOGIN
+
+document.getElementById('button-favoris').addEventListener('click', 
+function() {
+  document.querySelector('.bg-model').style.display = 'flex';
+})
+
+document.getElementById('button-playlist').addEventListener('click', 
+function() {
+  document.querySelector('.bg-model').style.display = 'flex';
+})
+
+document.getElementById('close').addEventListener('click', 
+function() {
+  document.querySelector('.bg-model').style.display = 'none';
+})

@@ -122,6 +122,13 @@ function IsValid() {
   return flag;
 }
 
+//like or not like
+document.getElementById('like').addEventListener('click', 
+function() {
+    if (document.getElementById('like').style.color == 'red')
+        document.getElementById('like').style.color = 'black';
+    else document.getElementById('like').style.color = 'red';
+});
 
 // POPUP LOGIN
 
@@ -139,3 +146,5 @@ document.getElementById('close').addEventListener('click',
 function() {
   document.querySelector('.bg-model').style.display = 'none';
 })
+
+

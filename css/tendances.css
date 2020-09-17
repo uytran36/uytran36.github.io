@@ -7,7 +7,7 @@
     font-weight: bold;
     color: #000;
 }
-#btnten{
+button[name="button"]{
     background-color: #E5E5E5;
     outline: none;
     border: none;
@@ -27,3 +27,4 @@
     display: block;
     padding-bottom: 15px;
 }
+

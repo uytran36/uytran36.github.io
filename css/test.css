@@ -192,6 +192,9 @@ body {
     font-size: 24px;
 }
 
+#artist:hover {
+    text-decoration: none;
+}
 /* end of playzone and lyrics */
 
 .popup {

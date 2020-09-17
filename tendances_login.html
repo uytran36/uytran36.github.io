@@ -16,13 +16,13 @@
     <!--HEADER-->
     <div  id="header">
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="accueil_login.html">
                 <img src="images/logo.png" alt="image" style="width:45px; height:45px;">
             </a>
             <!--Search và micro-->
             <div class="input-group  mr-sm-2" id="searchhd">
                 <input id="transcript" class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <form action="search.html" method="get" id="formSearch"></form>
+                <form action="search_login.html" method="get" id="formSearch"></form>
                 <div class="input-group-append">
                     <button id="btnSearchByVoice" onclick="SearchByVoice()" type="button" class="btn btn-light"
                         style="box-shadow: 0 0;">
@@ -35,8 +35,7 @@
             </button>
             <!--Đăng ký và đăng nhập-->
             <div class="seformhd">
-                <a class="seconnecterhd" href="login.html" style="text-decoration: none;">Se connecter <span  class="daunganhd">/</span> </a>
-                <a class="s_incrirhd" href="signup.html" style="text-decoration: none;">S'incrire</a>
+                <p>Bonjour. username!</p>
             </div>
           </nav>
     </div>
@@ -47,34 +46,58 @@
     <div class="mainBody">
         <div class="categories">
             <div class="categoriesSelection">
-                <a class="icon" href="index.html">
+                <a class="icon" href="accueil_login.html">
                     <span class="category" id="accueil">
                         Accueil
                     <img src="icon/Discover.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
-                <a class="icon" href="tendances.html">
+                <a class="icon" href="tendances_login.html">
                     <span class="category" id="tendances">
                         Tendances
                     <img src="icon/trending.jpg" style="width:20px; height:20px; margin-left: 15px;">
                     </span>
                 </a>
-                <a class="icon" href="album.html">
+                <a class="icon" href="album_login.html">
                     <span class="category" id="album">
                         Album                    
                     <img src="icon/Albums.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
-                <a class="icon" id="button-favoris" href="#">
+                <a class="icon" href="favoris.html">
                     <span class="category" id="favoris">                   
                         Favoris                    
                     <img src="icon/Favourite.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
-                <a class="icon" id="button-playlist" href="#">
+                <a class="icon" href="playlist.html">
                     <span class="category">                    
                         Playlist                   
                     <img src="icon/Plus.png" style="width:20px; height:20px; margin-left: 40px;">               
+                    </span>
+                </a>
+                <a class="icon" href="playlist1.html">
+                    <span class="playlist">
+                        Playlist 1
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a class="icon" href="#">
+                    <span class="playlist">
+                        Playlist 2
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a class="icon" href="#">
+                    <span class="playlist">
+                        Playlist 3
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">                  
+                    </span>
+                </a>
+                <a class="icon" href="#">
+                    <span class="playlist">
+                        Playlist 4
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
             </div>
@@ -212,7 +235,7 @@
                         <p id="infoSong">
                             Danse
                             <br>
-                            <a href="artistes.html" id="artist">Lomepal</a>
+                            <a href="artistes_login.html" id="artist">Lomepal</a>
                         </p>
                         <button type="button" class="fa fa-heart-o" id="like"></button>
                     </div>
@@ -252,7 +275,7 @@
         </div>
         <div id="temp"></div>
         <div class="popup">
-            <form id="labnol" action="search.html" method="GET">
+            <form id="labnol" action="search_login.html" method="GET">
                 <div class="popuptext" id="popupContent">Parlez quelques choses...
                     <div class="speech">
                         <img src="images/micro.png" />
@@ -296,37 +319,10 @@
         </div>
     </div>
     <!--END FOOTER-->
-    <!-- se connecter s'il vous plait -->
-    <div class="bg-model">
-        <div class="model-content">
-            <fieldset id="Login">
-                <div id="close">+</div>
-                <legend>Login</legend>
-                <div id="info">
-                    <input type="text" id="frmUsername" placeholder="Email ou nom d'ulitisateur"><br>
-                    <span class="error" id="errEmail"></span><br>
-    
-                    <input type="password" id="frmPassword" placeholder="Mot de passe" ><br>
-                    <span class="error" id="errPass"></span><br>
-    
-                    <input type="checkbox" id="rememberPwd">
-                    <label for="rememberPwd" id="checkPwd">Se souvenir de moi</label>
-                    
-                    <input type="submit" value="SE CONNECTER" id="btnLogin" onclick="IsValid()"><br>
-                    <div id="forgotPwd"><a href="#">Mot de passe oublié ?</a></div><hr class="line">
-                    <div id="noAccount">
-                        <h4 id="questionAcc">Vous n'avez pas de compte ?</h4>
-                        <a href="signup.html"><input type="submit" id="btnSignup" value="Je n'ai pas KD Musique"></a>
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-    </div>
-    <!-- terminé se connecter s'il vous plait -->
+
     <!--JS-->
     <script src="js/accueil.js"></script>
     <script src="js/tendances.js"></script>
-    <script src="js/login.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

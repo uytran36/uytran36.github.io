@@ -64,40 +64,16 @@
                     <img src="icon/Albums.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
-                <a class="icon" href="favoris.html">
+                <a class="icon" id="button-favoris" href="#">
                     <span class="category" id="favoris">                   
                         Favoris                    
                     <img src="icon/Favourite.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
-                <a class="icon" href="playlist.html">
+                <a class="icon" id="button-playlist" href="#">
                     <span class="category">                    
                         Playlist                   
                     <img src="icon/Plus.png" style="width:20px; height:20px; margin-left: 40px;">               
-                    </span>
-                </a>
-                <a href="playlist1.html">
-                    <span class="playlist">
-                        Playlist 1
-                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="playlist">
-                        Playlist 2
-                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="playlist">
-                        Playlist 3
-                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">                  
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="playlist">
-                        Playlist 4
-                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
                     </span>
                 </a>
             </div>
@@ -409,8 +385,36 @@
         </div>
     </div>
     <!--END FOOTER-->
-
+    <!-- se connecter s'il vous plait -->
+    <div class="bg-model">
+        <div class="model-content">
+            <fieldset id="Login">
+                <div id="close">+</div>
+                <legend>Login</legend>
+                <div id="info">
+                    <input type="text" id="frmUsername" placeholder="Email ou nom d'ulitisateur"><br>
+                    <span class="error" id="errEmail"></span><br>
+    
+                    <input type="password" id="frmPassword" placeholder="Mot de passe" ><br>
+                    <span class="error" id="errPass"></span><br>
+    
+                    <input type="checkbox" id="rememberPwd">
+                    <label for="rememberPwd" id="checkPwd">Se souvenir de moi</label>
+                    
+                    <input type="submit" value="SE CONNECTER" id="btnLogin" onclick="IsValid()"><br>
+                    <div id="forgotPwd"><a href="#">Mot de passe oublié ?</a></div><hr class="line">
+                    <div id="noAccount">
+                        <h4 id="questionAcc">Vous n'avez pas de compte ?</h4>
+                        <a href="signup.html"><input type="submit" id="btnSignup" value="Je n'ai pas KD Musique"></a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!-- terminé se connecter s'il vous plait -->
     <!--JS-->
+    <script src="js/accueil.js"></script>
+    <script src="js/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

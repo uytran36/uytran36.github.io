@@ -26,6 +26,12 @@
 .daunganhd{
     color: #FFf;
 }
+#logout {
+    text-decoration: none;
+}
+#logout:hover {
+    color: red;
+}
 /*FOOTER*/
 #footer{
     background-color: black;

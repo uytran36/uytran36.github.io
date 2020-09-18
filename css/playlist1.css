@@ -57,21 +57,8 @@
     margin: 0px;
     border-top: 1px solid #c5c5c5;
     padding: 15px;
-}
-
-.nameSong {
-    float: left;
-    padding-right: 250px;
-}
-
-.author {
-    float: left;
-    padding-right: 240px;
-}
-
-.toolBox ul {
-    margin-top: -40px;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px 200px;
 }
 
 .toolBox ul li {

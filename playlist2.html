@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <title>Playlist 2</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/playlist1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/search.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <div  id="header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="image" style="width:45px; height:45px;">
+            </a>
+            
+            <!--Search và micro-->
+            <div class="input-group  mr-sm-2" id="searchhd">
+                <input id="transcript" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <form action="search.html" method="get" id="formSearch"></form>
+                <div class="input-group-append">
+                    <button id="btnSearchByVoice" onclick="SearchByVoice()" type="button" class="btn btn-light"
+                        style="box-shadow: 0 0;">
+                        <i class="fa fa-microphone"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" form="formSearch">
+                <i class="fa fa-search"></i>
+            </button>
+            <div class="seformhd">
+                <p>Bonjour. username!</p>
+            </div>
+              
+          </nav>
+    </div>
+    <!--END HEADER-->
+
+    <div class="mainBody">
+        <div class="categories">
+            <div class="categoriesSelection">
+                <a class="icon" href="accueil_login.html">
+                    <span class="category" id="accueil">
+                        Accueil
+                    <img src="icon/Discover.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a class="icon" href="tendances_login.html">
+                    <span class="category" id="tendances">
+                        Tendances
+                    <img src="icon/trending.jpg" style="width:20px; height:20px; margin-left: 15px;">
+                    </span>
+                </a>
+                <a class="icon" href="album_login.html">
+                    <span class="category" id="album">
+                        Album                    
+                    <img src="icon/Albums.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a class="icon" href="favoris.html">
+                    <span class="category" id="favoris">                   
+                        Favoris                    
+                    <img src="icon/Favourite.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a class="icon" href="playlist.html">
+                    <span class="category">                    
+                        Playlist                   
+                    <img src="icon/Plus.png" style="width:20px; height:20px; margin-left: 40px;">               
+                    </span>
+                </a>
+                <a href="playlist1.html">
+                    <span class="playlist" id="p1" style=" background-color: #fff;">
+                        Playlist 1
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a href="playlist2.html">
+                    <span class="playlist" style="background-color: #c4c4c4;">
+                        Playlist 2
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+                <a href="playlist3.html">
+                    <span class="playlist">
+                        Playlist 3
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">                  
+                    </span>
+                </a>
+                <a href="playlist4.html">
+                    <span class="playlist">
+                        Playlist 4
+                    <img src="icon/Add.png" style="width:20px; height:20px; margin-left: 40px;">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="wrap-content">
+                <div class="wrap-playlist1">
+                    <label>Playlist 2</label>
+                    <div class="album-cover">
+                        <div class="wrap-cover">
+                            <img src="images/playlist2.jpg">
+                            <p>Playlist 2</p>
+                            <button id="btn-play">
+                                <i class="material-icons">play_arrow</i>
+                                <span>Jouer</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container" id="dTable">
+                        <div class="cardSong" id="song1">
+                            <div class="nameSong">
+                                <a href="#">1. Danse</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Lomepal</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like1">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song2">
+                            <div class="nameSong">
+                                <a href="#">2. Reputation</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Taylor Swift</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like2">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song3">
+                            <div class="nameSong">
+                                <a href="#">3. Funny</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Zedd</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like3">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song4">
+                            <div class="nameSong">
+                                <a href="#">4. Sing</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Ed Sheeran</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like4">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song5">
+                            <div class="nameSong">
+                                <a href="#">5. Bad Liar</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Imagine Dragons</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like5">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song6">
+                            <div class="nameSong">
+                                <a href="#">6. Circles</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Post Malone</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like6">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song7">
+                            <div class="nameSong">
+                                <a href="#">7. Kids In Love</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Kygo</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like7">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song8">
+                            <div class="nameSong">
+                                <a href="#">8. Rude</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Magic!</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like8">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song9">
+                            <div class="nameSong">
+                                <a href="#">9. When I'm Gone</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Eminem</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like9">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardSong" id="song10">
+                            <div class="nameSong">
+                                <a href="#">10. Sunflower</a>
+                            </div>
+                            <div class="author">
+                                <a href="artistes_login.html">Post Malone</a>
+                            </div>
+                            <div class="toolBox">
+                                <ul>
+                                    <li><i class="material-icons">playlist_add</i></li>
+                                    <li><i class="material-icons" id="like10">favorite</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playZone">
+            <div class="wrapPlay">
+                <div class="wrap">
+                    <div class="wrapInfo">
+                        <img src="icon/cover.jpg">
+                        <p id="infoSong">
+                            Danse
+                            <br>
+                            <a href="artistes_login.html" id="artist">Lomepal</a>
+                        </p>
+                        <button type="button" class="fa fa-heart-o" id="like"></button>
+                    </div>
+                    <div class="playBar">
+                        <img src="icon/play.png">
+                        <progress value="32" max="100"> 32% </progress>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapLyrics">
+                <label>Danse</label>
+                <p class="artist">Lomepal</p>
+                <p id="lyrics">Hey, j'repensais à...
+                    <br>
+                    Yeah
+                    <br>
+                    Fais la cour aux femmes <br>
+                    Je fais la cour aux femmes <br>
+                    Hey, hey, yeah <br>
+                    On l'a fait dans le sofa <br>
+                    Je l'ai fait dans l'œsophage <br>
+                    Hey, hey <br>
+                    Pauvre de moi, j'me souvenais pas <br>
+                    Qu'on avait le pouvoir de danser comme ça <br>
+                    Quand on se laisse aller, laisse-toi aller <br>
+                    Laisse nos énergies faire, je veux plus parler <br>
+                    Je donnerais tout ce que j'ai sur moi <br>
+                    Juste pour te voir danser encore une fois <br>
+                    Quand tu te laisses aller, laisse-toi aller <br>
+                    Oublie les autres connards qui te regardent, yeah <br>
+                    Malgré la lumière, on ne voit plus que nous <br>
+                    La musique s'est arrêtée, les aiguilles se figent et je sens, je te sens <br>
+                    Malgré la lumière, on ne voit plus que nous <br>
+                    La musique s'est arrêtée, les aiguilles se figent et je sens, je te sens</p>
+            </div>
+        </div>
+
+        <div class="popup">
+            <form id="labnol" action="search.html" method="GET">
+                <div class="popuptext" id="popupContent">Parlez quelques choses...
+                    <div class="speech">
+                        <img src="images/micro.png" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="temp"></div>
+    </div>
+
+    <!--FOOTER-->
+    <div id="footer" >
+        <div id="contentft" class="row">
+            <!--LOGO và cre-->
+            <div class="col-5">
+                <img src="images/logo.png" class="logofooter">
+                <span class="smaltextft"> ©2020 Designer par KDM d'équipe. </span>
+            </div>
+            <!--Các phản hồi ng dùng etc-->
+            <div class="col-3">
+                <ul class="smaltextulft">
+                    <a href="" style="text-decoration: none;"><li class="litextft">
+                        Điều khoản
+                    </li></a>
+                    <a href="" style="text-decoration: none;"><li class="litextft">
+                        APIs
+                    </li></a>  
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="smaltextulft">
+                    <a href="" style="text-decoration: none;"><li class="litextft">
+                        Liên hệ
+                    </li></a>
+                    <a href="" style="text-decoration: none;"><li class="litextft">
+                        Góp ý
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+
+    <!--JS-->
+    <script src="js/accueil.js"></script>
+    <script src="js/playlist1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -259,13 +259,6 @@ body {
     left: 0;
 }
 
-@media only screen and (max-width: 1000px){
-    #navbar{
-        margin-left: 10%;
-        padding-bottom: 20px;
-    }
-    
-}
 
 
 /*popup se connecter*/
@@ -442,4 +435,31 @@ span.frmName {
 }
 #ferme:hover {
     opacity: 1;
+}
+
+@media only screen and (max-width: 1000px){
+    #navbar{
+        margin-left: 0%;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    #header, #footer {
+        width: 100%;
+    }
+    .categories, .playZone {
+        display: none;
+    }
+    .mainBody {
+        display: contents;
+    }
+
+    #contentft {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
 }

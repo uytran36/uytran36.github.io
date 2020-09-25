@@ -136,3 +136,47 @@
         border-top-left-radius: 50% 1%;
    }
 }
+
+@media screen and (max-width: 1500px) {
+    .mainBody {
+        width: 100%;
+    }
+    #row0 {
+        font-size: 20px;
+    }
+
+    .wrap-carousel {
+        width: 90%;
+
+    }
+
+    .album img {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .theme img {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        margin: auto 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .txttheme {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    #carouselExampleControls4 .carousel-control-prev, #carouselExampleControls4 .carousel-control-next {
+        margin-top: 50px;
+        width: 20px;
+        height: 20px;
+    }
+}

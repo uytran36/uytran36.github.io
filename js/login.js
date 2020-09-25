@@ -1,8 +1,8 @@
 
 function IsValid() {
     let flag = true;
-    var id_email = "frmUsername";
-    var id_pass = "frmPassword";
+    var id_email = "name";
+    var id_pass = "pass";
   
     let control = document.getElementById(id_email);
     let error = document.getElementById("errEmail");
@@ -29,9 +29,9 @@ function IsValid() {
     return flag;
   }
 
-document.getElementById('btnLogin').addEventListener('click', 
+document.getElementById('btn2').addEventListener('click', 
 function() {
-  if(document.getElementById('frmUsername').value != "" && document.getElementById('frmPassword').value != "")
+  if(document.getElementById('name').value != "" && document.getElementById('pass').value != "")
     window.location.href = "accueil_login.html";
 })
   

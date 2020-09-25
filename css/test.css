@@ -273,11 +273,12 @@ body {
   position: fixed;
   top: 0;
   display: none;
+  z-index: 2;
 }
 
 .model-content {
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 550px;
   background-color: white;
   opacity: 1;
   border-radius: 10px;
@@ -304,10 +305,11 @@ body {
 #Login {
   border-color: black;
   width: 100%;
-
+  height: 100%;
   border: 0;
   margin-top: 25px;
 }
+
 #Login > legend {
   padding: 0;
   margin: 0 auto;
@@ -317,7 +319,7 @@ body {
 span.frmName {
   background-color: green;
 }
-#frmUsername {
+#name {
   color: #b3abab;
   width: 400px;
   height: 35px;
@@ -328,7 +330,7 @@ span.frmName {
   margin-top: 25px;
 }
 
-#frmPassword {
+#pass {
   color: #b3abab;
   width: 400px;
   height: 35px;
@@ -337,15 +339,15 @@ span.frmName {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-#frmPassword,
-#frmUsername {
+#pass,
+#name {
   outline-style: none;
 }
-#frmPassword:focus,
-#frmUsername:focus {
+#pass:focus,
+#name:focus {
   border-color: black;
 }
-#info {
+#abc {
   width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -353,7 +355,7 @@ span.frmName {
   border: 0;
   font-size: 12px;
 }
-#btnLogin {
+#btn2 {
   float: right;
   width: 200px;
   border-radius: 50px;
@@ -366,7 +368,7 @@ span.frmName {
   font-weight: bold;
   outline-style: none;
 }
-#btnLogin:hover {
+#btn2:hover {
   background-color: #f8afc0;
   opacity: 1;
 }
@@ -375,7 +377,7 @@ span.frmName {
   margin-top: 10px;
 }
 
-#forgotPwd {
+#oublier {
   color: #ff577f;
   text-align: center;
   margin-top: 25px;
@@ -392,7 +394,7 @@ span.frmName {
   font-weight: bold;
 }
 
-#btnSignup {
+#btn1 {
   color: black;
   background-color: white;
   border: 1px solid grey;
@@ -408,12 +410,12 @@ span.frmName {
   outline-style: none;
 }
 
-#btnSignup:hover {
+#btn1:hover {
   background-color: gray;
   color: white;
   opacity: 1;
 }
-#forgotPwd > a {
+#oublier > a {
   text-decoration: none;
 }
 
@@ -455,6 +457,10 @@ span.frmName {
   margin: 3px;
 }
 
+.hamburger:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1000px) {
   #navbar {
     margin-left: 0%;
@@ -472,7 +478,7 @@ span.frmName {
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 975px) {
   #header,
   #footer {
     width: 100%;
@@ -550,6 +556,69 @@ span.frmName {
     display: block;
     float: left;
   }
+
+
+  /*se connecter popup*/
+  .model-content {
+      width: 100%;
+      height: 100%;
+      transform: none;
+      top: 0;
+      left: 0;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    #Login {
+        width: 100%;
+    }
+
+    #Login > legend {
+        font-size: 20px;
+    }
+
+    #abc {
+        margin: 0;
+        width: 100%;
+    }
+        
+    #name {
+        width: 100%;
+        height: 35px;
+        padding: 6px 12px;
+    }
+
+    #pass {
+        width: 100%;
+        height: 35px;
+        padding: 6px 12px;
+    }
+
+    #btn1 {
+        width: 80%;
+    }
+
+    #btn2 {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #oblier {
+        margin-top: 20px;
+        margin:0;
+        text-align: center;
+    }
 }
 
 .nav-active {

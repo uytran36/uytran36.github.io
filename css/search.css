@@ -10,8 +10,8 @@
 }
 .album img{
     margin-top: 30px;
-    width: 152px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 .nomDeAlbum{
     text-align: center;
@@ -156,3 +156,24 @@
    }
 }
   
+@media screen and (max-width: 1100px) {
+    #row1, #row2, #row3, #row4 {
+        margin: 0;
+    }
+
+    #row1 ul li {
+        font-size: 18px;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .album img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #row1 .col {
+        width: 100%;
+        padding: 0;
+    }
+}

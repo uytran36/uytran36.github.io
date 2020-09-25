@@ -147,18 +147,31 @@ function() {
   document.querySelector('.bg-model').style.display = 'none';
 })
 
-document.getElementById('btnLogin').addEventListener('click', 
+document.getElementById('btn2').addEventListener('click', 
 function() {
-  if(document.getElementById('frmUsername').value != "" && document.getElementById('frmPassword').value != "")
+  if(document.getElementById('name').value != "" && document.getElementById('pass').value != "")
     window.location.href = "accueil_login.html";
 })
 
 const navSlide = () => {
   const burger = document.querySelector('.hamburger');
   const nav = document.querySelector('.categories');
- 
+  const favoris = document.getElementById('button-favoris');
+  const playlist = document.getElementById('button-playlist');
+
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active')
   })
+
+  favoris.addEventListener('click', () => {
+    nav.classList.toggle('nav-active')
+  })
+
+  playlist.addEventListener('click', () => {
+    nav.classList.toggle('nav-active')
+  })
+
+
 }
+
 navSlide();

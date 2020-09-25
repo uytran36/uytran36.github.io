@@ -16,7 +16,6 @@
 .logo a:hover {
     text-decoration: none;
     color: black;
-   
 }
 
 #Login {
@@ -26,18 +25,19 @@
     border: 0;
     margin-top: 25px;
 }
+
 #Login > legend {
     padding: 0;
     margin: 0 auto;
     font-weight: bold;
     width: fit-content;
-    
 }
+
 span.frmName {
     background-color: green;
-    
 }
-#frmUsername {
+
+#name {
     color: #b3abab;
     width: 400px;
     height: 35px;
@@ -46,10 +46,11 @@ span.frmName {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 25px;
+
 }
 
-#frmPassword {
-    color: #b3abab;
+#pass {
+    color: #c7b2b2;
     width: 400px;
     height: 35px;
     padding: 6px 12px;
@@ -57,13 +58,16 @@ span.frmName {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
 #frmPassword, #frmUsername {
     outline-style: none;
 }
+
 #frmPassword:focus, #frmUsername:focus {
     border-color: black;
 }
-#info {
+
+#abc {
     width: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -71,7 +75,8 @@ span.frmName {
     border: 0;
     font-size: 12px;
 }
-#btnLogin {
+
+#btn2 {
     float: right;
     width: 200px;
     border-radius: 50px;
@@ -84,17 +89,19 @@ span.frmName {
     font-weight: bold;
     outline-style: none;
 }
+
 #btnLogin:hover {
     background-color: #f8afc0;
     opacity: 1;
 }
+
 #checkPwd, #rememberPwd {
     margin-top: 10px;
 }
 
-#forgotPwd {
-    color: #ff577f;
+#oblier {
     text-align: center;
+    color: #ff577f;
     margin-top: 25px;
     height: fit-content;
     font-size: 12px;
@@ -109,7 +116,7 @@ span.frmName {
     font-weight: bold;
 }
 
-#btnSignup {
+#btn1 {
     color: grey;
     background-color: white;
     border:1px solid grey;
@@ -125,21 +132,24 @@ span.frmName {
     outline-style: none;
 }
 
-#btnSignup:hover {
+#bt1:hover {
     background-color: gray;
     color: white;
     opacity: 1;
 }
-#forgotPwd > a {
+#oblier > a {
     text-decoration: none;
 }
 
-#forgotPwd > a:hover {
+#oblier > a:hover {
     color: #f58ba4;
 }
 .line {
     background-color: #b3abab;
     height: 1px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 #content {
@@ -151,4 +161,72 @@ span.frmName {
     font-size: 12px;
     display: block;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    .line {
+        width: 100%;
+    }
+    #Login {
+        border-color: black;
+        width: 100%;
+        margin: 0 auto;
+        border: 0;
+        margin-top: 25px;
+    }
+
+    #Login > legend {
+        font-size: 20px;
+    }
+    
+    #frmUsername {
+        width: 55%;
+        height: 35px;
+        padding: 6px 12px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+
+    #abc {
+        margin: 0;
+        width: 100%;
+    }
+
+        
+    #name {
+        width: 100%;
+        height: 35px;
+        padding: 6px 12px;
+    }
+
+    #pass {
+        width: 100%;
+        height: 35px;
+        padding: 6px 12px;
+    }
+
+    #btn1 {
+        width: 100%;
+    }
+
+    #btn2 {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #oblier {
+        margin-top: 20px;
+        text-align: center;
+    }
 }

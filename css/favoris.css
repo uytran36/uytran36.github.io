@@ -21,7 +21,7 @@
     border-top: 1px solid #c5c5c5;
     padding: 15px;
     display: grid;
-    grid-template-columns: 300px 300px 100px
+    grid-template-columns: 40% 30% 30%
 }
 
 .toolBox ul li {
@@ -65,6 +65,7 @@
 
 .wrap-artist img {
     border-radius: 100px;
+    width: 150px;
 }
 
 .wrap-artist .chanteur {
@@ -76,6 +77,11 @@
     font-size: 25px;
     margin-left: 10%;
     padding-bottom: 100px;
+}
+
+.wrap-recommandations img {
+    width: 150px;
+    height: 150px;
 }
 
 .wrap-recommandations .carousel-inner, .wrap-artist .carousel-inner {
@@ -98,6 +104,11 @@
 }
 
 #carouselExampleControls3 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#carouselExampleControls4 {
     width: 900px;
     margin: 0 auto;
 }
@@ -126,59 +137,6 @@
     font-weight: bold;
 }
 
-.popup {
-    position: absolute;
-    margin-left: 20%;
-    display: inline-block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.popup .popuptext{
-    visibility: hidden;
-    width: 700px;
-    height: 500px;
-    background-color: #E5E5E5;
-    color: black;
-    text-align: left;
-    padding: 100px 0;
-    padding-left: 50px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 100px;
-    font-size: 30px;
-}
-.popup .show {
-    visibility: visible;
-}
-.speech{
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid red;
-    background-color: red;
-    height: 100px;
-    border-radius: 50%;
-    animation: corner 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-    -moz-border-radius:50%;
-    -webkit-border-radius: 50%;
-    width: 100px;
-    margin: 0 260px;
-    margin-top: 30px;
-}
-
-#temp{
-    visibility: hidden;
-    position: fixed;
-    background-color: black;
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
 @keyframes corner {
     0% {
         border-top-left-radius: 1% 50%;
@@ -222,3 +180,58 @@
    }
 }
 /* end of recommandations */
+
+@media screen and (max-width: 1100px) {
+    .wrap-content {
+        padding: 0;
+    }
+
+    .wrapFavoris label, .wrap-list-artist label, .wrap-list-recommandations label {
+        padding: 0;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    #dTable {
+        width: 100%;
+    }
+
+    .cardSong, .nameSong, .author, .toolBox {
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .wrap-artist, .wrap-recommandations {
+        margin: 10px 40px;
+    }
+    .wrap-recommandations .carousel-inner, .wrap-artist .carousel-inner {
+        width: 100%;
+        margin: 0;
+    }
+
+    #carouselExampleControls3 , #carouselExampleControls4 {
+        width: 100%;
+        margin: 0;        
+    }
+
+    .wrap-artist img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wrap-recommandations img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wrap-artist .carousel-control-next, .wrap-recommandations .carousel-control-next {
+        margin-top: 100px;
+        margin-right: -30px;
+    }
+
+    .wrap-artist .carousel-control-prev, .wrap-recommandations .carousel-control-prev {
+        margin-top: 100px;
+        margin-left: -30px;
+    }
+    
+}

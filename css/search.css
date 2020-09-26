@@ -61,58 +61,7 @@
     text-decoration: none;
     color: #ff577F;
 }
-.popup {
-    position: relative;
-    display: inline-block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.popup .popuptext{
-    visibility: hidden;
-    width: 700px;
-    height: 500px;
-    background-color: #E5E5E5;
-    color: black;
-    text-align: left;
-    padding: 100px 0;
-    padding-left: 50px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 100px;
-    font-size: 30px;
-}
-.popup .show {
-    visibility: visible;
-}
-.speech{
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid red;
-    background-color: red;
-    height: 100px;
-    border-radius: 50%;
-    animation: corner 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-    -moz-border-radius:50%;
-    -webkit-border-radius: 50%;
-    width: 100px;
-    margin: 0 260px;
-    margin-top: 30px;
-}
 
-#temp{
-    visibility: hidden;
-    position: fixed;
-    background-color: black;
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
 @keyframes corner {
     0% {
         border-top-left-radius: 1% 50%;

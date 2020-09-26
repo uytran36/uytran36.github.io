@@ -132,26 +132,30 @@ function() {
 
 // POPUP LOGIN
 
-document.getElementById('button-favoris').addEventListener('click', 
-function() {
-  document.querySelector('.bg-model').style.display = 'flex';
-})
-
-document.getElementById('button-playlist').addEventListener('click', 
-function() {
-  document.querySelector('.bg-model').style.display = 'flex';
-})
-
-document.getElementById('close').addEventListener('click', 
-function() {
-  document.querySelector('.bg-model').style.display = 'none';
-})
-
-document.getElementById('btn2').addEventListener('click', 
-function() {
-  if(document.getElementById('name').value != "" && document.getElementById('pass').value != "")
-    window.location.href = "accueil_login.html";
-})
+try {
+  document.getElementById('button-favoris').addEventListener('click', 
+  function() {
+    document.querySelector('.bg-model').style.display = 'flex';
+  })
+  
+  document.getElementById('button-playlist').addEventListener('click', 
+  function() {
+    document.querySelector('.bg-model').style.display = 'flex';
+  })
+  
+  document.getElementById('close').addEventListener('click', 
+  function() {
+    document.querySelector('.bg-model').style.display = 'none';
+  })
+  
+  document.getElementById('btn2').addEventListener('click', 
+  function() {
+    if(document.getElementById('name').value != "" && document.getElementById('pass').value != "")
+      window.location.href = "accueil_login.html";
+  })
+} catch(err) {
+  
+}
 
 const navSlide = () => {
   const burger = document.querySelector('.hamburger');
@@ -160,15 +164,15 @@ const navSlide = () => {
   const playlist = document.getElementById('button-playlist');
 
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active')
+    nav.classList.toggle('nav-active');
   })
 
   favoris.addEventListener('click', () => {
-    nav.classList.toggle('nav-active')
+    nav.classList.toggle('nav-active');
   })
 
   playlist.addEventListener('click', () => {
-    nav.classList.toggle('nav-active')
+    nav.classList.toggle('nav-active');
   })
 
 
